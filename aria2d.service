@@ -4,7 +4,7 @@ After = NetworkManager-wait-online.service network.target network-online.target 
 
 
 [Service]
-User = wwwdata
+User = www-data
 Type = simple
 PIDFile = /var/run/aria2.pid
 ExecStart = /usr/bin/aria2c --conf-path=/root/.aria2/aria2.conf
