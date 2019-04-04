@@ -5,10 +5,10 @@ After = NetworkManager-wait-online.service network.target network-online.target 
 
 [Service]
 User = www-data
-Umask = 002
+Umask = 0002
 Type = simple
 PIDFile = /var/run/aria2.pid
-ExecStart = /usr/bin/aria2c --/root/.aria2/aria2.conf
+ExecStart = /usr/bin/aria2c -- conf-path=/root/.aria2/aria2.conf
 StartLimitInterval = 60
 StartLimitBurst = 10
 
